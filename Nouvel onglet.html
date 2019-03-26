@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- saved from url=(0016)chrome://newtab/ -->
+
 <html dir="ltr" hascustombackground="false" bookmarkbarattached="false" lang="fr" class="md"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 <title>Nouvel onglet</title>
@@ -23,6 +23,8 @@ body {
   background-color: rgb(50, 54, 57);
   color: rgb(189, 193, 198);
   font-size: calc(100% - 2px);
+  
+  
   line-height: calc(100% + 6px);
   min-width: 240px;
 }
@@ -309,9 +311,9 @@ html[dir=rtl] .bulletpoints + .bulletpoints {
 <script>
 // Until themes can clear the cache, force-reload the theme stylesheet.
 document.write('<link id="incognitothemecss" rel="stylesheet" ' +
-               'href="chrome://theme/css/incognito_new_tab_theme.css?' +
+               'href="theme/css/incognito_new_tab_theme.css?' +
                Date.now() + '">');
-</script><link id="incognitothemecss" rel="stylesheet" href="chrome://theme/css/incognito_new_tab_theme.css?1553615620440">
+</script><link id="incognitothemecss" rel="stylesheet" href="theme/css/incognito_new_tab_theme.css?1553615620440">
 </head>
 <body>
 <div class="content" style="max-width: 600px;">
@@ -338,8 +340,8 @@ document.write('<link id="incognitothemecss" rel="stylesheet" ' +
   </div>
   <a class="learn-more-button" href="https://support.google.com/chrome/?p=incognito">En savoir plus</a>
 </div>
-<script src="chrome://resources/js/cr.js"></script>
-<script src="chrome://resources/js/util.js"></script>
+<script src="resources/js/cr.js"></script>
+<script src="resources/js/util.js"></script>
 <script>// Copyright 2017 The Chromium Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
@@ -390,7 +392,7 @@ const ntp = {
     document.documentElement.setAttribute(
         'hascustombackground', themeData.hasCustomBackground);
     $('incognitothemecss').href =
-        'chrome://theme/css/incognito_new_tab_theme.css?' + Date.now();
+        'theme/css/incognito_new_tab_theme.css?' + Date.now();
   },
 
   defaultFontSizeChanged: function() {
